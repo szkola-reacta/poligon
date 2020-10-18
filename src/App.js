@@ -13,14 +13,26 @@ const styles = {
   }
 };
 
-function News({ header, intro }) {
-  return (
-    <div style={styles}>
-      <h2>{header}</h2>
-      <p style={styles.para}>{intro}</p>
-    </div>
-  );
+class News extends React.Component {
+  render() {
+    const { header, intro } = this.props;
+    return(
+      <div style={styles}>
+        <h2>{header}</h2>
+        <p style={styles.para}>{intro}</p>
+      </div>
+    );
+  }
 }
+
+// function News({ header, intro }) {
+//   return (
+//     <div style={styles}>
+//       <h2>{header}</h2>
+//       <p style={styles.para}>{intro}</p>
+//     </div>
+//   );
+// }
 
 // function News({ header, intro }) {
 //   return (
