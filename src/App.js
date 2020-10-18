@@ -2,9 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-// const News = () => <p>Hello!</p>;
-function News({ header, intro }) { // function News(props)
-  // const { h2, p } = props;
+function News({ header, intro }) {
   return (
     <div>
       <h2>{header}</h2>
@@ -23,17 +21,12 @@ const data = [
   }
 ];
 
-// data.map((elem, index))
-
 function App() {
   return (
     <div>
       {data.map((elem, index) => (
         <News key={`news-${index}`} header={elem.header} intro={elem.intro} />
       ))}
-      {/* <News header="Nagłówek 1" intro="Intro 1" />
-      <News header="Nagłówek 2: Breaking news" intro="Intro 2" />
-      <News header="Nagłówek 3: Nie śpię bo trzymam kredens" intro="Intro 3" /> */}
     </div>
   );
 }
