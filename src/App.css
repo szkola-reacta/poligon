@@ -1,7 +1,9 @@
-.App {
-  text-align: center;
+.News {
+  background-color: #ecf0f1;
+  border: #95a5a6 1px solid;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.News p {
+  background: #f1c40f;
 }

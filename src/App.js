@@ -2,14 +2,34 @@ import React from 'react';
 
 import './App.css';
 
+const yellow = '#f1c40f';
+
+const styles = {
+  backgroundColor: '#ecf0f1',
+  border: '#95a5a6 1px solid',
+  padding: 10,
+  para: {
+    background: yellow
+  }
+};
+
 function News({ header, intro }) {
   return (
-    <div>
+    <div style={styles}>
       <h2>{header}</h2>
-      <p>{intro}</p>
+      <p style={styles.para}>{intro}</p>
     </div>
   );
 }
+
+// function News({ header, intro }) {
+//   return (
+//     <div className="News">
+//       <h2>{header}</h2>
+//       <p>{intro}</p>
+//     </div>
+//   );
+// }
 
 const data = [
   {
