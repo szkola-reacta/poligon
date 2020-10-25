@@ -1,6 +1,11 @@
 import React from 'react';
 
 import News from './pages/Articles';
+import Header from './components/Header';
+// import {
+//   Logo, NavLink
+// } from './components/Header';
+
 import './App.css';
 
 const data = [
@@ -14,6 +19,7 @@ const data = [
 function App() {
   return (
     <div>
+      <Header />
       {data.map((elem) => (
         <News
           key={`news-${elem.id}`}
