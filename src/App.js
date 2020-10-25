@@ -1,6 +1,6 @@
 import React from 'react';
 
-import News from './articles/containers/News';
+import News from './pages/Articles';
 import './App.css';
 
 const data = [
