@@ -1,17 +1,19 @@
 import React from 'react';
 
 import Logo from './Logo';
+import Menu from './Menu';
 import NavLink from './NavLink';
 
 function Header() {
   return (
     <div>
       <Logo />
-      <div>
+      <Menu>
         <NavLink to="/" label="Link 1" />
         <NavLink to="/" label="Link 2" />
         <NavLink to="/" label="Link 3" />
-      </div>
+        <NavLink to="/" label="Link 4" />
+      </Menu>
     </div>
   );
 }
