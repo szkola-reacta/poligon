@@ -2,14 +2,10 @@ import React from 'react';
 
 class Form extends React.Component {
   state = {
-    name: ''
+    name: '',
+    surname: '',
+    age: ''
   }
-  // constructor(props) {
-  //   super(props);
-  //   // this.handleChange = this.handleChange.bind(this);
-  //   // this.handleClick = this.handleClick.bind(this);
-  //   // this.handleSubmit = this.handleSubmit.bind(this);
-  // }
   handleSubmit(event) {
     event.preventDefault();
   }
@@ -18,16 +14,23 @@ class Form extends React.Component {
     console.log('React Button');
   }
   handleChange = (event) => {
-    // event.target.value
-    console.log('input value: ', event.target.value);
-    this.setState({ name: event.target.value });
-    console.log('this: ', this);
+    // event.target.name
+    const keyName = event.target.name;
+    this.setState({ [keyName]: event.target.value });
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" onChange={this.handleChange} />
-        <button onClick={this.handleClick}>React Button</button>
+        <div>
+          <input type="text" name="name" placeholder="Name" onChange={this.handleChange} />
+        </div>
+        <div>
+          <input type="text" name="surname" placeholder="Surname" onChange={this.handleChange} />
+        </div>
+        <div>
+          <input type="text" name="age" placeholder="Age" onChange={this.handleChange} />
+        </div>
+        <button type="submit" onClick={this.handleClick}>Send</button>
       </form>
     );
   }
