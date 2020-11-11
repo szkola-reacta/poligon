@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import { Input } from '../components/Form';
+import { Form, Input } from '../components/Form';
 
 function useInput(initialValue = '') {
   const [value, setValue] = useState(initialValue);
@@ -12,7 +12,7 @@ function useInput(initialValue = '') {
   return [value, handleChange];
 }
 
-function Form() {
+function Registration() {
   const [name, handleNameChange] = useInput('Patryk');
   const [surname, handleSurnameChange] = useInput('Omiotek');
   const [age, handleAgeChange] = useInput('35');
@@ -35,7 +35,7 @@ function Form() {
         <div>Surname: {surname}</div>
         <div>Age: {age}</div>
       </div>
-      <form className="Form" onSubmit={handleSubmit}>
+      <Form handleSubmit={handleSubmit}>
         <div className="Form__group">
           <Input
             type="text"
@@ -68,7 +68,7 @@ function Form() {
           <button type="submit" onClick={handleClick}>Send</button>
           <button type="button" onClick={handleFocusClick}>Focus</button>
         </div>
-      </form>
+      </Form>
     </div>
   );
 }
@@ -119,4 +119,4 @@ function Form() {
 //   }
 // }
 
-export default Form;
+export default Registration;

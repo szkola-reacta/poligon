@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
 // import Articles from './pages/Articles';
-import Form from './pages/Form';
+import Registration from './pages/Registration';
 import './App.css';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Content>
         {/* <Articles /> */}
-        <Form />
+        <Registration />
       </Content>
       <Footer />
     </div>
