@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 
+import { Input } from '../components/Form';
+
 function useInput(initialValue = '') {
   const [value, setValue] = useState(initialValue);
 
@@ -35,12 +37,12 @@ function Form() {
       </div>
       <form className="Form" onSubmit={handleSubmit}>
         <div className="Form__group">
-          <input
+          <Input
             type="text"
             name="name"
             placeholder="Name"
             value={name}
-            onChange={handleNameChange}
+            handleChange={handleNameChange}
           />
         </div>
         <div className="Form__group">
@@ -54,12 +56,12 @@ function Form() {
           />
         </div>
         <div className="Form__group">
-          <input
+          <Input
             type="text"
             name="age"
             placeholder="Age"
             value={age}
-            onChange={handleAgeChange}
+            handleChange={handleAgeChange}
           />
         </div>
         <div className="Form__group">
