@@ -11,9 +11,9 @@ function useInput(initialValue = '') {
 }
 
 function Form() {
-  const [name, handleNameChange] = useInput('');
-  const [surname, handleSurnameChange] = useInput('');
-  const [age, handleAgeChange] = useInput('');
+  const [name, handleNameChange] = useInput('Patryk');
+  const [surname, handleSurnameChange] = useInput('Omiotek');
+  const [age, handleAgeChange] = useInput('35');
   const surnameInput = useRef();
 
   const handleClick = () => console.log('React Button');
@@ -29,7 +29,9 @@ function Form() {
   return (
     <div>
       <div>
-
+        <div>Name: {name}</div>
+        <div>Surname: {surname}</div>
+        <div>Age: {age}</div>
       </div>
       <form className="Form" onSubmit={handleSubmit}>
         <div className="Form__group">
@@ -37,6 +39,7 @@ function Form() {
             type="text"
             name="name"
             placeholder="Name"
+            value={name}
             onChange={handleNameChange}
           />
         </div>
@@ -46,6 +49,7 @@ function Form() {
             ref={surnameInput}
             name="surname"
             placeholder="Surname"
+            value={surname}
             onChange={handleSurnameChange}
           />
         </div>
@@ -54,6 +58,7 @@ function Form() {
             type="text"
             name="age"
             placeholder="Age"
+            value={age}
             onChange={handleAgeChange}
           />
         </div>
