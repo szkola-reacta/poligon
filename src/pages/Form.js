@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 function useInput(initialValue = '') {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(initialValue);
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -25,33 +25,44 @@ function Form() {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
-  // const handleChange = (event) => {
-  //   // event.target.name
-  //   // event.target.value
-  //   const name = event.target.name;
-  //   const value = event.target.value;
-  //   if (name === 'name') {
-  //     setName(value);
-  //   } else if (name === 'surname') {
-  //     setSurname(value);
-  //   } else if (name === 'age') {
-  //     setAge(value);
-  //   }
-  // };
+
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
       <div>
-        <input type="text" name="name" placeholder="Name" onChange={handleNameChange} />
+
       </div>
-      <div>
-        <input type="text" ref={surnameInput} name="surname" placeholder="Surname" onChange={handleSurnameChange} />
-      </div>
-      <div>
-        <input type="text" name="age" placeholder="Age" onChange={handleAgeChange} />
-      </div>
-      <button type="submit" onClick={handleClick}>Send</button>
-      <button type="button" onClick={handleFocusClick}>Focus</button>
-    </form>
+      <form className="Form" onSubmit={handleSubmit}>
+        <div className="Form__group">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            onChange={handleNameChange}
+          />
+        </div>
+        <div className="Form__group">
+          <input
+            type="text"
+            ref={surnameInput}
+            name="surname"
+            placeholder="Surname"
+            onChange={handleSurnameChange}
+          />
+        </div>
+        <div className="Form__group">
+          <input
+            type="text"
+            name="age"
+            placeholder="Age"
+            onChange={handleAgeChange}
+          />
+        </div>
+        <div className="Form__group">
+          <button type="submit" onClick={handleClick}>Send</button>
+          <button type="button" onClick={handleFocusClick}>Focus</button>
+        </div>
+      </form>
+    </div>
   );
 }
 
