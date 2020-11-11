@@ -49,7 +49,7 @@ function Form() {
             ref={surnameInput}
             name="surname"
             placeholder="Surname"
-            value={surname}
+            defaultValue={surname}
             onChange={handleSurnameChange}
           />
         </div>
