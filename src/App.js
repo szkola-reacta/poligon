@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Articles from './pages/Articles';
 import Registration from './pages/Registration';
+import Movies from './pages/Movies';
 import './App.css';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Registration />
+          </Route>
+          <Route path="/movies">
+            <Movies />
           </Route>
           <Route path="/">
             <Home />
