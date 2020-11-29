@@ -1,0 +1,13 @@
+.Menu {
+  border-bottom: #7f8c8d 1px solid;
+}
+
+.Menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Menu ul > li{
+  display: inline-block;
+  margin: 8px;
+}

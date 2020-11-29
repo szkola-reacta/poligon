@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logoImg from './szkola-reacta-logo.png';
 
@@ -10,7 +11,9 @@ const styles = {
 function Logo() {
   return (
     <div>
-      <img src={logoImg} alt="Logo" style={styles} />
+      <Link to="/">
+        <img src={logoImg} alt="Logo" style={styles} />
+      </Link>
     </div>
   );
 }
