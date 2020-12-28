@@ -9,7 +9,7 @@ function Form() {
       <h1>Button</h1>
       <Button>Hey!</Button>
       <h1>Switch</h1>
-      <Switch />
+      <Switch labelOn="Active" labelOff="Inactive" />
     </div>
   );
 }

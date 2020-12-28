@@ -19,19 +19,21 @@ const Switch = ({ onToggle, checked, color, labelOff, labelOn }) => {
     </span>
   );
   return (
-    <label data-testid="Switch" className="Switch" htmlFor="Switch-input">
+    <div>
       {renderLabel(labelOff, false)}
-      <input
-        id="Switch-input"
-        data-testid="Switch-input"
-        className="visually-hidden"
-        type="checkbox"
-        onChange={toggle}
-        checked={isChecked}
-      />
-      <span className={`Switch-slider round ${color}`} />
+      <label data-testid="Switch" className="Switch" htmlFor="Switch-input">
+        <input
+          id="Switch-input"
+          data-testid="Switch-input"
+          className="visually-hidden"
+          type="checkbox"
+          onChange={toggle}
+          checked={isChecked}
+        />
+        <span className={`Switch-slider round ${color}`} />
+      </label>
       {renderLabel(labelOn, true)}
-    </label>
+    </div>
   );
 };
 
