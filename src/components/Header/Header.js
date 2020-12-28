@@ -18,6 +18,7 @@ function Header() {
           <li><Link to="/articles">Articles</Link></li>
           <li><Link to="/movies">Movies</Link></li>
           <li><Link to="/register">Register</Link></li>
+          <li><Link to="/form">Form</Link></li>
         </ul>
       </Menu>
     </div>

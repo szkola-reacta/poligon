@@ -14,6 +14,7 @@ import Articles from './pages/Articles';
 import Registration from './pages/Registration';
 import Movies from './pages/Movies';
 import Movie from './pages/Movie';
+import Form from './pages/Form';
 import './App.css';
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/movies">
             <Movies />
+          </Route>
+          <Route path="/form">
+            <Form />
           </Route>
           <Route path="/">
             <Home />
