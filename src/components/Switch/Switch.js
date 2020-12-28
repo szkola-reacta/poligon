@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './style.css';
+import './styles.css';
 
 const Switch = ({ onToggle, checked, color, labelOff, labelOn }) => {
   const [isChecked, setIsChecked] = useState(checked);
