@@ -19,6 +19,7 @@ function Header() {
           <li><Link to="/movies">Movies</Link></li>
           <li><Link to="/register">Register</Link></li>
           <li><Link to="/form">Form</Link></li>
+          <li><Link to="/counter">Counter</Link></li>
         </ul>
       </Menu>
     </div>

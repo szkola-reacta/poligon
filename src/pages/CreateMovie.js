@@ -31,13 +31,13 @@ function CreateMovie() {
           </div>
           <div>
             <label htmlFor="description-field">Description</label>
-            <input type="text" id="description-field" title="description" />
+            <input type="text" id="description-field" name="description" />
           </div>
           <div>
             <label htmlFor="video-url-field">Video URL</label>
-            <input type="text" id="video-url-field" title="video_url" />
+            <input type="text" id="video-url-field" name="video_url" />
           </div>
-          <input type="submit" value="Send" />
+          <button type="submit">Submit</button>
         </form>
       }
     </div>
