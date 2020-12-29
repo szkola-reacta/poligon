@@ -7,3 +7,7 @@
 .News p {
   background: #f1c40f;
 }
+
+label {
+  display: block;
+}

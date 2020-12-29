@@ -14,6 +14,7 @@ import Articles from './pages/Articles';
 import Registration from './pages/Registration';
 import Movies from './pages/Movies';
 import Movie from './pages/Movie';
+import CreateMovie from './pages/CreateMovie';
 import Form from './pages/Form';
 import './App.css';
 
@@ -29,7 +30,10 @@ function App() {
           <Route path="/register">
             <Registration />
           </Route>
-          <Route path="/movies/:movieId">
+          <Route exact path="/movies/create">
+            <CreateMovie />
+          </Route>
+          <Route exact path="/movies/:movieId">
             <Movie />
           </Route>
           <Route path="/movies">

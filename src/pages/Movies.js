@@ -23,6 +23,7 @@ function Movies() {
     <div className="Movies">
       {isLoading && <p>Loading...</p>}
       {hasError && <p>An error has occurred</p>}
+      <div><Link to="/movies/create">Create movie</Link></div>
       {movies.map((movie) => (
         <div key={movie.id} className="Movie">
           <h2><Link to={`/movies/${movie.id}`}>{movie.title}</Link></h2>
