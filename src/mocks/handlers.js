@@ -20,12 +20,12 @@ export const handlers = [
       ctx.json([
         {
           id: 'f79e82e8-c34a-4dc7-a49e-9fadc0979fda',
-          firstName: 'John',
+          firstName: 'John12',
           lastName: 'Maverick',
         },
         {
           id: '30769d1c-22f5-43d2-8f2c-eaa1796930a7',
-          firstName: 'John',
+          firstName: 'John13',
           lastName: 'Kowalsky',
         },
         {
