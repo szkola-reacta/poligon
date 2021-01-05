@@ -1,6 +1,17 @@
 {
   "extends": "react-app",
+  "plugins": [
+    "cypress"
+  ],
+  "env": {
+    "cypress/globals": true
+  },
   "rules": {
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error"
   }
 }

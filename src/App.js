@@ -17,6 +17,7 @@ import Movie from './pages/Movie';
 import CreateMovie from './pages/CreateMovie';
 import Form from './pages/Form';
 import Counter from './components/Counter';
+import Users from './pages/Users';
 import './App.css';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Form />
           </Route>
           <Route path="/counter"><Counter /></Route>
+          <Route path="/users"><Users /></Route>
           <Route path="/">
             <Home />
           </Route>

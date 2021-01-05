@@ -20,6 +20,7 @@ function Header() {
           <li><Link to="/register">Register</Link></li>
           <li><Link to="/form">Form</Link></li>
           <li><Link to="/counter">Counter</Link></li>
+          <li><Link to="/users">Users</Link></li>
         </ul>
       </Menu>
     </div>

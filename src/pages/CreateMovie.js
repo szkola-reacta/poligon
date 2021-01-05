@@ -27,15 +27,15 @@ function CreateMovie() {
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="title-field">Title</label>
-            <input type="text" id="title-field" name="title" />
+            <input type="text" id="title-field" data-testid="title-field" name="title" />
           </div>
           <div>
             <label htmlFor="description-field">Description</label>
-            <input type="text" id="description-field" name="description" />
+            <input type="text" id="description-field" data-testid="description-field" name="description" />
           </div>
           <div>
             <label htmlFor="video-url-field">Video URL</label>
-            <input type="text" id="video-url-field" name="video_url" />
+            <input type="text" id="video-url-field" data-testid="video-url-field" name="video_url" />
           </div>
           <button type="submit">Submit</button>
         </form>
