@@ -1,4 +1,4 @@
-describe('Form testing', () => {
+describe('Create movie form testing', () => {
   it('should fill form', () => {
     cy.visit('/movies/create');
 
